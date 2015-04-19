@@ -1,4 +1,5 @@
 ﻿.git
 Debug.win32
 proj.*
+proj.win32
 *.sdf
