@@ -39,6 +39,8 @@ bool HelloWorld::init()
 	//顺带提一下CCMenu优先级为-128,数值越小越优先,有点像minHeap
 	CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this,-200,false);
     
+	schedule( schedule_selector(HelloWorld::myUpdate),1 );
+
 	return true;
 }
 
@@ -175,7 +177,8 @@ void HelloWorld::moveDown()
 	}
 }
 
-void HelloWorld::update( float t )
+void HelloWorld::myUpdate( float t )
 {
-	CCLOG("void HelloWorld::update( float t )") ;
+
+	CCLog("void HelloWorld::update( float t )",t ) ;
 }

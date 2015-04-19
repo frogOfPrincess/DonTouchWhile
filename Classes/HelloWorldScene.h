@@ -29,6 +29,9 @@ public:
 	//开始回调
 	void funForStart();
 
+	//重载每帧刷新函数
+	void myUpdate( float t );
+
 	//注册监听事件需重载以下函数
 	//教程中使用的是3.0版本引擎的用法auto listener = EventListenerTouchOneByOne::create();
 	bool ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent);
@@ -37,6 +40,9 @@ public:
 
 	//色块下滑函数
 	void moveDown();
+
+public:
+	CCSprite* pTime ;
 };
 
 #endif // __HELLOWORLD_SCENE_H__
