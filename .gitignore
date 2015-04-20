@@ -3,3 +3,4 @@ Debug.win32
 proj.*
 proj.win32
 *.sdf
+proj.win32/*.*
