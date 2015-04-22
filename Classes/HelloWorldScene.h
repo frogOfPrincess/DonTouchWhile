@@ -29,6 +29,7 @@ public:
 	//开始回调
 	void funForStart();
 
+	void update(float dt);
 	//注册监听事件需重载以下函数
 	//教程中使用的是3.0版本引擎的用法auto listener = EventListenerTouchOneByOne::create();
 	bool ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent);
