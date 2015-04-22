@@ -1,14 +1,2 @@
-﻿
-*.ios
-*.linux
-*.mac
-*.marmalade
-*.winrt
-*.wp8
-*.android
-*.blackberry
-Debug.win32
-proj.win32/DonTouchWhile.v11.suo
-proj.win32/DonTouchWhile.sdf
-DonTouchWhile.opensdf
-*.sdf
+﻿.git
+proj.win32
