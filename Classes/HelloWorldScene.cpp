@@ -35,6 +35,7 @@ bool HelloWorld::init()
 
 	funForStart();
 	
+	scheduleUpdate();
 	//开启监听触屏 参数为 对象,优先级,是否吞噬即不再往下传递事件,,,
 	//顺带提一下CCMenu优先级为-128,数值越小越优先,有点像minHeap
 	CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this,-200,false);
